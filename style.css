@@ -108,6 +108,7 @@
  .div_image{
     width: 100%;
     height: 100%;
+    object-fit: cover;
  }
 .image_div{
     height: 100vh;
@@ -127,4 +128,52 @@ br{
 #design_b{
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+#reviews{
+   margin: auto;
+   width: fit-content;
+   display: flex;
+   align-items: center;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   /* border: solid black 1px; */
+}
+#reviews>img{
+   width: 45px;
+   height: 45px;
+   margin-right: 10px;
+   border-radius: 60px;
+}
+
+#form{
+   margin: auto;
+   width: 75%;
+   margin-top: 75px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-areas:
+      "first second"
+      "email tel"
+      "adress city"
+      "add_inf add_inf"
+      /* "add_inf add_inf" */
+   ;
+   gap: 20px;
+   margin-bottom: 25px;
+}
+#form>input{
+   height: 2rem;
+   padding: 5px;
+}
+#form:last-child{
+   height: 5rem;
+}
+#form_2{
+   margin: auto;
+   width: 75%;
+   margin-bottom: 25px;
+}
+#fin_button{
+   margin-bottom: 25px;
 }
